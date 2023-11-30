@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 from sys import argv, exit
 from calculator_1 import add, sub, mul, div
 
@@ -16,9 +17,9 @@ if __name__ == "__main__":
     operator = argv[2]
     if operator == '+':
         result = add(a, b)
-    if operator == '-':
+    elif operator == '-':
         result = sub(a, b)
-    if operator == '*':
+    elif operator == '*':
         result = mul(a, b)
     else:
         result = div(a, b)
