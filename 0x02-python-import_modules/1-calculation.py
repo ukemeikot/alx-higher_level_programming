@@ -7,7 +7,7 @@ from calculator_1 import add, sub, div, mul
 if __name__ == "__main__":
     a = 10
     b = 5
-    print(f"{a} + {b} = {add(a, b)}")
-    print(f"{a} - {b} = {sub(a, b)}")
-    print(f"{a} * {b} = {mul(a, b)}")
-    print(f"{a} / {b} = {div(a, b)}")
+    print("{} + {} = {}".format(add(a, b)))
+    print("{} - {} = {}".format(sub(a, b)))
+    print("{} * {} = {}".format(mul(a, b)))
+    print("{} / {} = {}".format(div(a, b)))
