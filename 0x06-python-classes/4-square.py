@@ -36,10 +36,11 @@ class Square:
         this method returns the area of the square
 
         Args:
-            None
+            No Args
 
 
         """
+        return self.__size**2
 
     @property
     def size(self):
