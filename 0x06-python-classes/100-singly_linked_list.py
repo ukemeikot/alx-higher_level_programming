@@ -36,6 +36,7 @@ class Node:
         else:
             raise TypeError("next_node must be a Node object")
 
+
 class SinglyLinkedList:
     """ a class model for a singly linked list """
     def __init__(self):
