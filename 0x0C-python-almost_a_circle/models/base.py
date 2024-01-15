@@ -2,6 +2,7 @@
 
 """This is the Base Model"""
 
+
 class Base:
     """Base class from which all other classes are derived from"""
     __nb_objects = 0
