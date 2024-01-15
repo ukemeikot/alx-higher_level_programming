@@ -119,3 +119,13 @@ class Rectangle(Base):
         else:
             for key, value in kwargs.items():
                 setattr(self, key, value)
+
+    def to_dictionary(self):
+        """ build and a dictionary using the instance attribute """
+        d = {}
+        d['id'] = self.id
+        d['width'] = self.width
+        d['height'] = self.height
+        d['x'] = self.x
+        d['y'] = self.y
+        return d
