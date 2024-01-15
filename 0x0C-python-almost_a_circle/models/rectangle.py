@@ -96,4 +96,3 @@ class Rectangle(Base):
             for col in range(self.width):
                 print("#", end='')
             print()
-
