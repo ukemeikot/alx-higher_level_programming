@@ -102,3 +102,20 @@ class Rectangle(Base):
         cls = "[Rectangle]"
         s = f"{cls} ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
         return s
+
+    def update(self, *argv, **kwargs):
+        """ a pointer to a variable number of positional arguments """
+        if argv != ():
+            if len(argv) >= 1:
+                self.id = argv[0]
+            if len(argv) >= 2:
+                self.width = argv[1]
+            if len(argv) >= 3:
+                self.height = argv[2]
+            if len(argv) >= 4:
+                self.x = argv[3]
+            if len(argv) >= 5:
+                self.y = argv[4]
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
